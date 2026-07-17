@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node.js Assignment</title>
+    <title>MERN Module Assignment - Theory Questions</title>
+
+
+<body>
+
+<div class="container">
+
+    <h1>Module Assignment - Part 1: Theory Questions</h1>
+
+    <h2>V8 Engine</h2>
+
+    <div class="question">
+        <h3>1. What is the V8 Engine?</h3>
+        <div class="answer">
+            <p>
+                The <strong>V8 Engine</strong> is Google's open-source JavaScript engine.
+                It was developed for Google Chrome and is also used by Node.js.
+                It converts JavaScript code into machine code so that the computer
+                can execute it quickly and efficiently.
+            </p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>2. Why is the V8 Engine important for Node.js?</h3>
+        <div class="answer">
+            <p>
+                The V8 Engine allows Node.js to run JavaScript outside the browser.
+                It compiles JavaScript directly into machine code, making Node.js
+                applications fast and efficient.
+            </p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>3. What is the main responsibility of the V8 Engine?</h3>
+        <div class="answer">
+            <p>
+                The main responsibility of the V8 Engine is to execute JavaScript code.
+                It compiles JavaScript into machine code to improve performance and
+                execute programs efficiently.
+            </p>
+        </div>
+    </div>
+
+    <h2>Execution</h2>
+
+    <div class="question">
+        <h3>4. What is the difference between Synchronous and Asynchronous execution?</h3>
+
+        <div class="answer">
+            <p><strong>Synchronous Execution:</strong></p>
+            <ul>
+                <li>Executes one task at a time.</li>
+                <li>Each task waits for the previous task to finish.</li>
+                <li>It blocks the execution of the next task.</li>
+            </ul>
+
+            <p><strong>Asynchronous Execution:</strong></p>
+            <ul>
+                <li>Does not wait for a task to finish.</li>
+                <li>Other tasks continue running while the asynchronous task is completed.</li>
+                <li>It makes applications faster and more responsive.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>5. What is the Call Stack?</h3>
+
+        <div class="answer">
+            <p>
+                The <strong>Call Stack</strong> is a data structure that keeps track of
+                function execution in JavaScript. When a function is called, it is
+                pushed onto the stack, and when it finishes execution, it is removed
+                from the stack.
+            </p>
+        </div>
+    </div>
+
+    <h2>Event Loop</h2>
+
+    <div class="question">
+        <h3>6. What is the Event Loop?</h3>
+
+        <div class="answer">
+            <p>
+                The <strong>Event Loop</strong> is a mechanism in Node.js that continuously
+                checks whether the Call Stack is empty. If the Call Stack is empty,
+                it moves completed asynchronous tasks from the Callback Queue to the
+                Call Stack for execution.
+            </p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>7. Why is the Event Loop needed in Node.js?</h3>
+
+        <div class="answer">
+            <p>
+                Node.js is single-threaded, so it can execute only one task on the
+                Call Stack at a time. The Event Loop helps Node.js handle asynchronous
+                operations efficiently without blocking the main thread.
+            </p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>8. How does the Event Loop help execute asynchronous code?</h3>
+
+        <div class="answer">
+            <p>
+                When an asynchronous operation such as <strong>setTimeout()</strong> or
+                file reading starts, Node.js sends it to libuv. Once the operation
+                finishes, its callback is placed in the Callback Queue. When the Call
+                Stack becomes empty, the Event Loop moves the callback to the Call
+                Stack, where it is executed.
+            </p>
+        </div>
+    </div>
+
+    <h2>libuv</h2>
+
+    <div class="question">
+        <h3>9. What is libuv?</h3>
+
+        <div class="answer">
+            <p>
+                <strong>libuv</strong> is a C library used by Node.js that provides
+                asynchronous I/O operations. It manages the Event Loop, timers,
+                thread pool, file system operations, and networking.
+            </p>
+        </div>
+    </div>
+
+    <div class="question">
+        <h3>10. What types of tasks are handled by libuv?</h3>
+
+        <div class="answer">
+            <p>libuv handles many asynchronous tasks, including:</p>
+
+            <ul>
+                <li>File System operations</li>
+                <li>Network operations</li>
+                <li>DNS lookups</li>
+                <li>Timers (setTimeout and setInterval)</li>
+                <li>Thread Pool tasks</li>
+                <li>Event Loop management</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+ <h1>MERN Module Assignment Part 2</h1>
+
+    <p>Open the browser console to see the JavaScript output.</p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
